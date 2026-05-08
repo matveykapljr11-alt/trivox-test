@@ -136,13 +136,13 @@ export function BottomNav() {
 }
 
 // ─── PAGE SHELL ──────────────────────────────────────────────────────────────
-export function PageShell({ children }: { children: ReactNode }) {
+function App() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex-1">{children}</main>
-      <SiteFooter />
-      <BottomNav />
+    <div style={{ padding: "40px", color: "white", background: "#111", minHeight: "100vh" }}>
+      <h1>TRIVOX</h1>
+      <p>Киберспортивная платформа запущена 🚀</p>
     </div>
   )
 }
-export default PageShell
+
+export default App
