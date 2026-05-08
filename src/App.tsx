@@ -136,13 +136,14 @@ export function BottomNav() {
 }
 
 // ─── PAGE SHELL ──────────────────────────────────────────────────────────────
-function App() {
+export default function App() {
   return (
-    <div style={{ padding: "40px", color: "white", background: "#111", minHeight: "100vh" }}>
-      <h1>TRIVOX</h1>
-      <p>Киберспортивная платформа запущена 🚀</p>
-    </div>
+    <PageShell>
+      <PageHero
+        eyebrow="TRIVOX"
+        title="Киберспортивная платформа"
+        description="Турниры, команды, игроки и праки."
+      />
+    </PageShell>
   )
 }
-
-export default App
